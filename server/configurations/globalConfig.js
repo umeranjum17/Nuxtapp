@@ -1,0 +1,1 @@
+const secret = require('./secret')

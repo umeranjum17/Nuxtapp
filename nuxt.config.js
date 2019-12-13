@@ -1,4 +1,5 @@
 
+
 module.exports = {
   mode: 'universal',
   /*
@@ -22,6 +23,15 @@ module.exports = {
   /*
   ** Global CSS
   */
+  // serverMiddleware: [
+  //   // body-parser middleware
+
+  //   // session middleware
+
+  //   // Api middleware
+  //   // We add /api/login & /api/logout routes
+  //   '~/server'
+  // ],
   css: [
     '~/assets/custom.scss'
   ],
@@ -46,6 +56,14 @@ module.exports = {
     bootstrapCSS: false, // Or `css: false`
     bootstrapVueCSS: false // Or `bvCSS: false`
   },
+  proxy: {
+    'prefix': 'http://localhost:3000/api'
+  },
+  // server: {
+  //   port: 8000, // default: 3000
+  //   host: '127.0.0.1', // default: localhost,
+
+  // },
   /*
   ** Build configuration
   */
